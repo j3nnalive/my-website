@@ -1,0 +1,333 @@
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>j3nnalive</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="icon" type="image/x-icon" href="assets/assets raw/favicon.png" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#photos" class="icon solid fa-camera"><span>Photos</span></a>
+						<a href="#music" class="icon solid fa-music"><span>Music</span></a>
+						<a href="#reviews" class="icon solid fa-star"><span>Reviews</span></a>
+						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+						<a href="#game" class="icon solid fa-ghost"><span>Bored?</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+    							<header>
+       								<h1><b>j3nnalive</b></h1>
+       								<h4>tiktok's least favourite musician</h4>
+        							<p id="para">j3nnalive is a musician and gaming content creator hailing from West Yorkshire, specialising in alternative-rock and speedrunning video games. Her work explores issues of being transgender in a world where her identity is used as a political tool and scapegoat by those who want to put her down and eradicate her through her revolutionary lyrics, aggressive sound, and her monumental achievements in gaming. Amassing a combined following of 94,000 across her social media platforms, j3nna has performed her music across the country from her home town Bradford all the way to London and Brighton. Additionally, she has held numerous records across her career as a speedrunner including the world record for blinfolded Minecraft. Currently, j3nna is seeking to expand her career through extensive gigging, music releases, and gaining another few world records to add to her belt all in the name of silencing transphobes and uplifting the voices of her community.</p>
+        
+       					 <!-- Shorten/Lengthen Button -->
+        					<button onclick="toggleText()" id="toggleButton">Shorten Bio</button>
+    							</header>
+   									 <a href="#photos" class="jumplink pic">
+    					   				 <span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+    					   				 <img src="assets/assets raw/j4.png" alt="" />
+   						 			</a>
+							</article>
+
+				<script>
+				// JavaScript to toggle paragraph text
+				let isShortened = false;
+
+				function toggleText() {
+					const para = document.getElementById("para");
+					const button = document.getElementById("toggleButton");
+
+					// Add fade-out class before changing the text
+					para.classList.add("fade");
+
+					// Wait for the fade-out transition to complete before changing the text
+					setTimeout(() => {
+						if (isShortened) {
+							para.textContent = "j3nnalive is a musician and gaming content creator hailing from West Yorkshire, specialising in alternative-rock and speedrunning video games. Her work explores issues of being transgender in a world where her identity is used as a political tool and scapegoat by those who want to put her down and eradicate her through her revolutionary lyrics, aggressive sound, and her monumental achievements in gaming. Amassing a combined following of 94,000 across her social media platforms, j3nna has performed her music across the country from her home town Bradford all the way to London and Brighton. Additionally, she has held numerous records across her career as a speedrunner including the world record for blinfolded Minecraft. Currently, j3nna is seeking to expand her career through extensive gigging, music releases, and gaining another few world records to add to her belt all in the name of silencing transphobes and uplifting the voices of her community.";
+							button.textContent = "Shorten Bio";
+						} else {
+							para.textContent = "j3nnalive is a musician hailing from West Yorkshire with music centred around being transgender in a world that doesn’t want her to be. Her aggressive sound has led to a combined following on social media of 94,000 as well as playing gigs all across the country. Currently, she is seeking to release more music, play more shows, and keep on silencing transphobes and uplifting the voices of other trans people both in the industry and out.";
+							button.textContent = "Lengthen Bio";
+						}
+
+						// Toggle the state and remove fade-out class
+						isShortened = !isShortened;
+						para.classList.remove("fade");
+					}, 500); // Timeout duration should match the fade-out transition time
+				}
+
+
+				</script>
+
+				<style>
+					/* CSS to change the font of the button */
+					#toggleButton {
+						font-family: 'Montserrat', sans-serif; /* Use Montserrat font (or any font you prefer) */
+						font-weight: 700; /* Set bold weight */
+						font-size: 16px;  /* Set font size */
+						padding: 10px 20px; /* Add padding to the button */
+						background-color: #ab3bdf; /* Set background color */
+						color: white; /* Set text color */
+						border: none; /* Remove border */
+						border-radius: 5px; /* Add rounded corners */
+						cursor: pointer; /* Change cursor to a pointer */
+						margin-top: 20px; /* Add space between paragraph and button */
+					}
+					
+					/* Hover effect for the button */
+					#toggleButton:hover {
+						background-color: #e91ef0; /* Darker background on hover */
+					}
+				</style>
+
+						<!-- Photos -->
+							<article id="photos" class="panel">
+								<header>
+									<h2>Photos</h2>
+								</header>
+								<p>
+									All photos were taken by <a href="https://www.instagram.com/shermanlovesthecure" target="_blank">@shermanlovesthecure</a> on Instagram.
+								</p>
+								<section>
+									<div class="row">
+										<!-- Top row -->
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
+										</div>
+									</div>
+									
+									<!-- Bottom row -->
+									<div class="row aln-center" style="margin-top: -0.6em;">
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
+										</div>
+									</div>
+								</section>
+							</article>
+
+						<!-- Music -->
+						<article id="music" class="panel">
+							<header>
+								<h2>Music</h2>
+							</header>
+							<p>
+								Listen to a selection of j3nna's music here. Alternatively, check out her <a href="https://open.spotify.com/artist/7lW5BY5OjBgMpAeszoOl48?si=BL4wmOiJQ0OoNhdBgjnCKw" target="_blank">spotify</a>
+							</p>
+							 <!-- Container for the columns -->
+							<div class="music-container">
+								<!-- Column 1 -->
+								<div class="music-column">
+									<h3>Mario Kart 8</h3>
+									<img src="assets/assets raw/artworks-cY4y6K6zpaxW8yrU-FHHnjQ-t500x500.jpg" alt="Album Art 1" class="album-art">
+									<audio controls>
+										<source src="assets/assets raw/Course Intro Mario Kart 8 OST.mp3" type="audio/mp3">
+										Your browser does not support the audio element.
+									</audio>
+									<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies est vitae tellus fermentum, sit amet consequat ligula sagittis. In neque tellus, bibendum vel gravida ac, mattis ut eros. Aenean vel gravida lacus. Maecenas dignissim accumsan commodo. Donec tempor felis at efficitur vulputate. Nullam placerat maximus eros a porttitor. Duis non justo ultricies, consectetur nisi et, mollis quam. Integer malesuada libero ut felis maximus, sed vehicula nisi blandit. Donec at quam nisl. Curabitur posuere leo nec leo euismod elementum. Phasellus dignissim ac velit nec feugiat. Aenean sed lacus at massa tincidunt suscipit. Nam lorem turpis, egestas vel faucibus sed, blandit a velit. Suspendisse nec ornare neque, sed tincidunt metus.</p>
+								</div>
+
+								<!-- Column 2 -->
+								<div class="music-column">
+									<h3>Pepsiman Theme</h3>
+									<img src="assets/assets raw/ab67616d0000b2736f0a645f1d4bbf084b99dfe7.jpg" alt="Album Art 2" class="album-art">
+									<audio controls>
+										<source src="assets/assets raw/James Shimoji - Pepsi Man Theme Song (ORIGINAL) - Rizu Drums Ch. リズドラム.mp3" type="audio/mp3">
+										Your browser does not support the audio element.
+									</audio>
+									<p class="description">Duis rhoncus vulputate ipsum. Etiam nunc mauris, mollis porta pretium sit amet, ultrices non diam. Nulla semper, orci rutrum tincidunt placerat, libero lectus efficitur neque, eget eleifend justo quam nec lectus. Donec laoreet vestibulum velit, at rutrum turpis elementum eu. Curabitur maximus imperdiet iaculis. Curabitur consectetur a mauris et venenatis. Fusce tellus sapien, tincidunt ac semper vitae, vulputate ac mi. Mauris sapien erat, consequat eu luctus pulvinar, lacinia sed sem. Sed malesuada elit vel lorem hendrerit, sit amet mattis lacus mattis. Pellentesque non posuere neque. Proin scelerisque lobortis diam in faucibus.</p>
+								</div>
+
+								<!-- Column 3 -->
+								<div class="music-column">
+									<h3>Doom Music</h3>
+									<img src="assets/assets raw/ab67616d0000b273aad36b64a1a78951b504bc4e.jpg" alt="Album Art 3" class="album-art">
+									<audio controls>
+										<source src="assets/assets raw/Doom Eternal OST - The Only Thing They Fear Is You (Mick Gordon) [Doom Eternal Theme].mp3" type="audio/mp3">
+										Your browser does not support the audio element.
+									</audio>
+									<p class="description">Aliquam sem magna, varius ac ex a, mollis pretium augue. In interdum arcu orci, at convallis magna porttitor non. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras nibh felis, facilisis at pellentesque in, pharetra id velit. Phasellus pretium, nisl vitae egestas ultricies, nibh nulla euismod nisi, scelerisque pulvinar eros dolor sed sem. Nunc interdum consequat ligula id sollicitudin. Nam ullamcorper placerat eros, et cursus enim tempor in. Vestibulum arcu nisl, sagittis vitae risus eu, sollicitudin sodales ipsum. Vestibulum bibendum tristique lobortis. Duis at lacus ullamcorper, pharetra metus in, tincidunt augue. Aliquam convallis, nisl at commodo tincidunt, neque felis consequat arcu, vitae sollicitudin risus.</p>
+								</div>
+							</div>
+						</section>
+						</article>
+
+						<!-- Reviews -->
+						<article id="reviews" class="panel">
+							<header>
+								<h2>Reviews</h2>
+							</header>
+							<p>
+								j3nnalive receives a lot of grand, glorifying reviews; here are some of her favourites.
+							</p>
+
+							 <!-- Reviews Carousel Container -->
+							<div class="carousel-container">
+								<!-- Left Arrow -->
+								<button class="carousel-arrow left-arrow" onclick="moveCarousel(-1)">&#10094;</button>
+								
+								<!-- Carousel Content: Reviews -->
+								<div class="carousel">
+									<!-- Review 1 -->
+									<div class="carousel-item">
+										<img src="images/profile1.jpg" alt="Profile 1" class="profile-pic">
+										<h3 class="reviewer-name">user6928744402 on TikTok</h3>
+										<p class="review-text">"this shit's ass"</p>
+									</div>
+									
+									<!-- Review 2 -->
+									<div class="carousel-item">
+										<img src="images/profile2.jpg" alt="Profile 2" class="profile-pic">
+										<h3 class="reviewer-name">ChatGPT</h3>
+										<p class="review-text">"As an AI language model, I don't have personal opinions on j3nna's music, and I never will."</p>
+									</div>
+									
+									<!-- Review 3 -->
+									<div class="carousel-item">
+										<img src="images/profile3.jpg" alt="Profile 3" class="profile-pic">
+										<h3 class="reviewer-name">Barack Obama, Former President of the United States</h3>
+										<p class="review-text">"My fellow Americans, look, I respect the effort, but this track just doesn’t connect. The lyrics feel off, and the production lacks depth. j3nna has potential, though— just needs more work to find that spark."</p>
+									</div>
+								</div>
+								
+								<!-- Right Arrow -->
+								<button class="carousel-arrow right-arrow" onclick="moveCarousel(1)">&#10095;</button>
+
+								<script>
+									// JavaScript to move the carousel left or right
+									let currentIndex = 0;
+									
+									function moveCarousel(direction) {
+										const items = document.querySelectorAll('.carousel-item');
+										const totalItems = items.length;
+									
+										currentIndex += direction;
+									
+										// Wrap around if it goes out of bounds
+										if (currentIndex < 0) {
+											currentIndex = totalItems - 1;
+										} else if (currentIndex >= totalItems) {
+											currentIndex = 0;
+										}
+									
+										// Move the carousel by shifting the content using the transform property
+										const carousel = document.querySelector('.carousel');
+										carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+									}
+									</script>
+									
+    </div>
+						</article>
+
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Contact Me</h2>
+									<p>For all business enquiries, please email management@j3nnalive.com. For all other enquiries, fill out the form below.</p>
+								</header>
+								<!-- modify this form HTML and place wherever you want your form -->
+								<form
+								action="https://formspree.io/f/xbljkpzl"
+								method="POST"
+								>
+								<label>
+								Your email:
+								<input type="email" name="email">
+								</label>
+								<label>
+								Your message:
+								<textarea name="message"></textarea>
+								</label>
+								<!-- your other form fields go here -->
+								<button type="submit">Send</button>
+								</form>
+							</article>
+
+						<!-- Game -->
+						<article id="game" class="panel">
+							<header>
+								<h2>Bored?</h2>
+								<p>Has my site bored you too much? Why not play a quick game of legally distinct and non-copyrightable Puck Guy?</p>
+							</header>
+
+							<!-- Start Game Button -->
+    						<button id="startGameBtn">Start Game</button>
+
+							<div class="grid">
+							<!-- Game grid is rendered -->
+							</div>
+
+							<h3>Score: <span id="score"></span></h3>
+						</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; j3nnalive</li>
+							<li>design: j3nnalive</a></li>
+						</ul>
+
+						 <!-- Social Media Links Section -->
+						<div class="social-media">
+							<a href="https://www.tiktok.com/@j3nnalive" target="_blank" class="social-icon tiktok">
+								<i class="fab fa-tiktok"></i>
+							</a>
+							<a href="https://www.twitch.tv/j3nnalive" target="_blank" class="social-icon twitch">
+								<i class="fab fa-twitch"></i>
+							</a>
+							<a href="https://discord.com/invite/2EWMKKfQmx" target="_blank" class="social-icon discord">
+								<i class="fab fa-discord"></i>
+							</a>
+							<a href="https://www.youtube.com/@j3nnalive" target="_blank" class="social-icon youtube">
+								<i class="fab fa-youtube"></i>
+							</a>
+							<a href="https://www.instagram.com/j3nnalive" target="_blank" class="social-icon instagram">
+								<i class="fab fa-instagram"></i>
+							</a>
+							<a href="https://open.spotify.com/artist/7lW5BY5OjBgMpAeszoOl48?si=caso_RYXSBGYnzO9d3Eskw" target="_blank" class="social-icon spotify">
+								<i class="fab fa-spotify"></i>
+							</a>
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/game.js"></script>
+
+	</body>
+</html>
